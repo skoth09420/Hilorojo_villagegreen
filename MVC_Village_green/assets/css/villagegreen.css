@@ -1,0 +1,159 @@
+﻿/* Styles généraux */
+.clearfix { clear: both; }
+
+body { 
+  background-image: url("../img/BACKGROUND/backgroundvillage.png");
+  background-repeat: no-repeat;
+  background-size: 150vw 550vh;
+  font-family: Calibri, Arial, serif;
+  font-size-adjust: 0.5; }
+
+/* Styles d'en-tête */
+header, .headerxs {
+  top: 0px;
+  background-color: rgba(231, 231, 231, 0.8);
+  padding:0px;
+}
+
+.logo   { z-index: 1; position: absolute; }
+.madmin { background-color: #E7E7E7; }
+
+.navtype1 { 
+  z-index: 0;
+  padding-left : 1%; padding-right : 1%;
+  padding-top: 0.5%; padding-bottom: 0.5%; }
+.navtype1xs { 
+  z-index: 0;
+  margin-left: 0%; margin-right: 0%;
+  background-color: #E7E7E7; }
+
+.navtype2 { 
+  z-index: 0;
+  vertical-align: middle;
+  margin-left: 0%; margin-right: 0%;
+  padding : 0.75%;
+  background-color: grey; }
+.navtype2xs { 
+  z-index: 0;
+  color: #00023C;
+  margin-left: 0%; margin-right: 0%;
+  padding-top: 1%; padding-bottom: 1%;
+  background-color: grey; }
+
+.navtype3 { 
+  z-index: 0;
+  vertical-align: middle;
+  margin-left: 0%; margin-right: 0%;
+  padding : 0.7%;
+  background-color: black; }
+.navtype3xs { background: black; color: white; }
+
+a.navlinks:link { color: white; }
+a.navlinks:visited { color: lightgrey; }
+a.navlinks:hover { color: #E7E7E7; }
+a.navlinks:active { color: lightblue; }
+
+.navbutton { color: black; }
+.navbutton:hover { color: #00023C; }
+a.navlinkxs:link { color: white; }
+a.navlinkxs:visited { color: lightgrey; }
+a.navlinkxs:hover { color: #E7E7E7; }
+a.navlinkxs:active { color: lightblue; }
+
+a.navlinksbl:link { color: black; }
+a.navlinksbl:visited { color: #00023C; }
+a.navlinksbl:hover { color: #00023C; }
+a.navlinksbl:active { color: black; }
+
+
+/* Styles de corps */
+#contenu {  background-color: #E7E7E7; }
+#fontacc { background-color: #E7E7E7; }
+
+.lvl1 { padding-top:2%; padding-bottom:2%; }
+.lvl2 { padding-left:4%; }
+.lvl3 { text-align: center; vertical-align: text-middle; }
+
+.guitar { padding-right: 1%;  z-index:0; }
+.banner { padding-left: 1%;   z-index:0; }
+
+
+/* Styles de pied-de-page */
+footer { color:white; }
+orange { color:#ffc107; }
+
+.imagefooter      { z-index:0; position:absolute; }
+.textesurimagge   { z-index:2; padding-top: 2%; }
+
+
+/* MEDIA QUERIES */
+/* XS */
+@media screen and (max-width: 399px) {
+  body, p, a, header, label, button, h1, h2, h3 { font-size: 0.9em; } h4, h5, h6 { font-size: 0.8em;  }
+  .logo { max-width: 50%; height: 5.5rem; }
+  .guitar { width: 100%; height: 10rem; } .banner { width: 100%; height: 10rem; } .categs { width: 100%; height: 3.75rem; }
+  .contbody { padding-top: 8%; margin-left: 2%; margin-right: 2%; }
+  #fontacc, .headerxs { margin-left:2%; margin-right:2%; }
+  .imvente { width: 2.8rem; height: 5rem; }
+  .impart { width: 8.374rem; height: 6.2em; }
+}
+@media screen and (min-width: 400px) and (max-width: 575px) {
+  body, p, a, header, label, button, h1, h2, h3 { font-size: 0.9em; } h4, h5, h6 { font-size: 0.8em;  }
+  .logo { max-width: 50%; height: 5.5rem; }
+  .guitar { width: 100%; height: 15rem; } .banner { width: 100%; height: 15rem; } .categs { width: 100%; height: 4em; }
+  .contbody { padding-top: 8%; margin-left: 2%; margin-right: 2%; }
+  #fontacc, .headerxs { margin-left:2%; margin-right:2%; }
+  .imvente { width: 2.8rem; height: 5rem; }
+  .impart { width: 10rem; height: 6.2em; }
+}
+
+/* SM */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  body, p, a, header, label, button, h1, h2, h3 { font-size: 0.9em; } h4, h5, h6 { font-size: 0.8em;  }
+  .logo { max-width: 50%; height: 7rem; }
+  .guitar { width: 100%; height: 15rem; } .banner { width: 100%; height: 15rem; } .categs { width: 100%; height: 5rem; }
+  .contbody { padding-top: 8%; margin-left: 2%; margin-right: 2%; }
+  #fontacc, header, .headerxs { margin-left:4%; margin-right:4%; }
+  .imvente { width: 4.75rem; height: 8.5rem; }
+  .impart { width: 14rem; height: 9.5em; }
+  .textesurimagge { padding-left:3%; margin-left:2%; margin-right:8%; }
+}
+
+/* MD */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body, p, a, header, label, button, h1, h2, h3 { font-size: 1em; } h4, h5, h6 { font-size: 1em;    }
+  .logo { width: auto; height: 10rem; }
+  .guitar { width: 100%; height: 22rem; } .banner { width: 100%; height: 22rem; } .categs { width: 100%; height: 7em; }
+  .contbody { padding-top: 8%; margin-left: 2%; margin-right: 2%; }
+  #fontacc, header, .headerxs { margin-left:6%; margin-right:6%; }
+  .imvente { padding-left: 2%; padding-right: 2%; width: 7rem; height: 10rem; }
+  .impart { width: 23.7rem; height: 10em; }
+  .imagefooter { margin-left:4.6%; margin-right:4.5%; width: 87.5%; }
+  .textesurimagge { padding-left:6.5%; margin-left:2%; margin-right:8%; }
+}
+
+/* LG */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  body, p, a, header, label, button, h1, h2, h3 { font-size: 1em; } h4, h5, h6 {font-size: 1em;    }
+  .logo { width: auto; height: 11rem; }
+  .guitar { width: 100%; height: 26rem; } .banner { width: 100%; height: 26rem; } .categs { width: 100%; height: 10em; }
+  .contbody { padding-top: 9%; margin-left: 2%; margin-right: 2%; }
+  #fontacc, header, .headerxs { margin-left:8%; margin-right:8%; }
+  .imvente { padding-left: 2%; padding-right: 2%; width: 7.5rem; height: 12em; }
+  .impart { width:24rem; height: 12em; }
+  .imagefooter { margin-left:6.3%; margin-right:8.85%; width: 84%; }
+  .textesurimagge { padding-left:8%; margin-left:2%; margin-right:8%; }
+}
+
+/* XL */
+@media screen and (min-width: 1200px) {
+  body, p, a, header, label, button, h1, h2, h3 { font-size: 1.1em; } h4, h5, h6 { font-size: 1.02em; }
+  .logo { width: auto; height: 12rem; }
+  .guitar { width: 100%; height: 33rem; } .banner { width: 100%; height: 33rem; } .categs { width: 100%; height: 12em; }
+  .contbody { padding-top: 8%; margin-left: 2%; margin-right: 2%; }
+  #fontacc, header, .headerxs { margin-left:10%; margin-right:10%; }
+  .imvente { padding-left: 2%; padding-right: 2%; width: 10rem; height: 18.3rem; }
+  .impart { width:28rem; height: 18em; }
+  .imagefooter { margin-left:8.5%; margin-right:8.85%; width: 80%; }
+  .textesurimagge { padding-left:10%; margin-left:2%; margin-right:8%; }
+}
